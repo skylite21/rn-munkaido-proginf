@@ -1,6 +1,6 @@
 module.exports = {
   extends: 'universe',
-  "parser": "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   env: {
     'react-native/react-native': true,
   },
@@ -8,7 +8,12 @@ module.exports = {
   rules: {
     'no-use-before-define': 'off',
     'react/jsx-filename-extension': 'off',
-    "prettier/prettier": "warn",
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
     'react/prop-types': 'off',
     'comma-dangle': 'off',
     'object-curly-newline': 'off',

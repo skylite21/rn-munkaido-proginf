@@ -39,7 +39,7 @@ const LoginPage = props => {
     await signUp(email, password);
     const initialUserData = {
       name: userName,
-      email,
+      email: email.toLowerCase(),
       currentState: 'out',
     };
     createUserOnFirebase(initialUserData);
